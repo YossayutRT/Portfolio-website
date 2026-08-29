@@ -190,13 +190,13 @@
             <article class="project-card project-card-wide reveal">
               <div class="project-media project-media-nexus">
                 <span class="project-number">04</span>
-                <span class="project-visual-label">NEXUS AI</span>
+                <span class="project-visual-label">WellyAI</span>
               </div>
               <div class="project-content">
-                <div class="project-topline"><span class="project-badge" data-i18n="project.badge4">Automation</span><span class="project-year">04</span></div>
-                <h3 data-i18n="project.title4">Nexus AI</h3>
-                <p data-i18n="project.text4">A LINE-based assistant that helps students and working people organise tasks and deadlines through n8n automation.</p>
-                <div class="project-meta"><span>n8n</span><span>LINE</span><span>Automation</span></div>
+                <div class="project-topline"><span class="project-badge" data-i18n="project.badge4">RAG Assistant</span><span class="project-year">04</span></div>
+                <h3 data-i18n="project.title4">WellyAI</h3>
+                <p data-i18n="project.text4"></p>
+                <div class="project-meta"><span>Python</span><span>FastAPI</span><span>LangChain</span><span>FAISS</span></div>
                 <button class="project-link" type="button" data-project-id="nexus" data-bs-toggle="modal" data-bs-target="#projectModal"><span data-i18n="project.link">View details</span><span aria-hidden="true">↗</span></button>
               </div>
             </article>
@@ -308,9 +308,9 @@
           'project.badge3': 'ระบบข้อมูล',
           'project.title3': 'Smart Parking System',
           'project.text3': 'ระบบแสดงข้อมูลลานจอดรถและจำนวนที่ว่าง ช่วยให้ผู้ใช้วางแผนก่อนเดินทางได้ง่ายขึ้น',
-          'project.badge4': 'ระบบอัตโนมัติ',
-          'project.title4': 'Nexus AI',
-          'project.text4': 'ผู้ช่วยผ่าน LINE ที่ช่วยจัดการงานและเดดไลน์สำหรับนักศึกษาและวัยทำงานด้วยระบบอัตโนมัติจาก n8n',
+          'project.badge4': 'RAG Assistant',
+          'project.title4': 'WellyAI',
+          'project.text4': 'AI assistant สำหรับตอบคำถามด้านโภชนาการและสุขภาพ โดยอ้างอิงจากฐานความรู้ที่จัดทำขึ้นเอง เพื่อให้คำตอบมีความแม่นยำและ grounded กับข้อมูลจริง',
           'project.link': 'ดูรายละเอียด',
           'modal.roleLabel': 'บทบาท / จุดเด่น',
           'modal.stackLabel': 'เทคโนโลยีที่ใช้',
@@ -361,9 +361,9 @@
           'project.badge3': 'Information system',
           'project.title3': 'Smart Parking System',
           'project.text3': 'A parking overview that helps people check locations, spaces, and availability before they arrive.',
-          'project.badge4': 'Automation',
-          'project.title4': 'Nexus AI',
-          'project.text4': 'A LINE-based assistant that helps students and working people organise tasks and deadlines through n8n automation.',
+          'project.badge4': 'RAG Assistant',
+          'project.title4': 'WellyAI',
+          'project.text4': 'An AI assistant for nutrition and health questions, grounded in a curated knowledge base to deliver more reliable and context-aware answers.',
           'project.link': 'View details',
           'modal.roleLabel': 'Role / Focus',
           'modal.stackLabel': 'Tech stack',
@@ -407,10 +407,10 @@
             github: 'https://github.com/YossayutRT/Smart-Parking-System'
           },
           nexus: {
-            title: 'Nexus AI', role: 'สร้างระบบอัตโนมัติสำหรับจัดการงานและเดดไลน์',
-            tech: ['n8n', 'LINE', 'Automation'],
-            highlights: ['ช่วยจัดการงานและแจ้งเตือนเดดไลน์ผ่านแอปพลิเคชัน LINE', 'ออกแบบมาเพื่อช่วยนักศึกษาและวัยทำงานไม่ให้พลาดงานสำคัญ', 'เชื่อม workflow อัตโนมัติเพื่อลดการจดงานไว้หลายที่'],
-            github: 'https://github.com/YossayutRT/Nexus-AI-The-Task-Life-Harmonizer'
+            title: 'WellyAI', role: 'พัฒนาช่วยเหลือด้านโภชนาการด้วยระบบ RAG ที่อ้างอิงข้อมูลจริงจากฐานความรู้',
+            tech: ['Python', 'FastAPI', 'LangChain', 'FAISS', 'HuggingFace Embeddings', 'React + Vite'],
+            highlights: ['สร้างระบบค้นคืนข้อมูลจาก dataset อาหาร BMI และ DGA โดยแปลงเป็น vector embedding', 'เชื่อมต่อกับ LLM ผ่าน LangChain เพื่อให้คำตอบสอดคล้องกับ context จริง', 'ออกแบบ interface สำหรับถาม-ตอบเรื่องปริมาณแคลอรี่ ความสัมพันธ์กับสุขภาพ และความเสี่ยงทางโภชนาการ', 'ใช้ข้อมูลที่มีโครงสร้างและมีแหล่งอ้างอิง เพื่อให้คำตอบมีความน่าเชื่อถือและลดความผิดพลาดจาก model ทั่วไป'],
+            github: 'https://github.com/YossayutRT/WellyAI'
           }
         },
         en: {
@@ -433,10 +433,10 @@
             github: 'https://github.com/YossayutRT/Smart-Parking-System'
           },
           nexus: {
-            title: 'Nexus AI', role: 'Created an automated task and deadline assistant',
-            tech: ['n8n', 'LINE', 'Automation'],
-            highlights: ['Helps users manage tasks and receive deadline reminders through LINE', 'Designed for students and working people who need a simpler way to stay on track', 'Connects automated workflows so important tasks do not get scattered across multiple places'],
-            github: 'https://github.com/YossayutRT/Nexus-AI-The-Task-Life-Harmonizer'
+            title: 'WellyAI', role: 'Developed a nutrition-focused AI assistant using a RAG pipeline backed by a curated knowledge base',
+            tech: ['Python', 'FastAPI', 'LangChain', 'FAISS', 'HuggingFace Embeddings', 'React + Vite'],
+            highlights: ['Converted food, BMI, and DGA datasets into embeddings for semantic retrieval', 'Connected retrieval results to an LLM to generate grounded, explainable answers', 'Designed a chat interface for natural-language health and nutrition questions', 'Reduced dependence on generic model knowledge by grounding responses in structured data'],
+            github: 'https://github.com/YossayutRT/WellyAI'
           }
         }
       };
